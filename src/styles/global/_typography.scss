@@ -35,6 +35,10 @@ span.highlight{
     &--bold{
         font-weight: 500;
     }
+    &--inactive{
+        pointer-events: none;
+        color: rgba($color-primary, .5);
+    }
 }
 
 .small-section-title{

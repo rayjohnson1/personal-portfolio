@@ -16,7 +16,6 @@ export default class Header extends React.Component {
                                 <li><a href={`#projects`}>Projects</a></li>
                                 <li><a href={`#blogs`}>Blog</a></li>
                             </ul>
-                            <a href={`#`} className={`menu-btn`}><i className="fas fa-bars"></i></a>
                         </div>
                     </nav>
                     <div className={`container`}>
