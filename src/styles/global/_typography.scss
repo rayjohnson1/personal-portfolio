@@ -23,3 +23,23 @@ span.highlight{
     color: $color-primary;
     font-weight: 500;
 }
+
+.link{
+    color: $color-primary;
+    text-decoration: none;
+
+    i{
+        margin-right: .5rem;
+    }
+
+    &--bold{
+        font-weight: 500;
+    }
+}
+
+.small-section-title{
+    color: #2A4660;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}

@@ -5,7 +5,70 @@ interface IProps {
     render?: () => JSX.Element;
 }
 
-export default class AboutMe extends Component<IProps> {
+interface IState {
+    visible: IVisibleState
+}
+
+interface IVisibleState {
+    [key: string]: boolean;
+    whyImDifferent: boolean,
+    myPractices: boolean,
+    howYouHelp: boolean
+}
+
+export default class AboutMe extends Component<IProps, IState> {
+
+    constructor(props: IProps){
+        super(props);
+
+        this.state = {
+            visible: {
+                myPractices: false,
+                whyImDifferent: true,
+                howYouHelp: false
+            }
+        }
+    }
+
+    setHowImDifferentActive = () => {
+        const visibleState = this.state.visible;
+        for(let key in visibleState){
+            visibleState[key] = false;
+        }
+
+        visibleState['whyImDifferent'] = true;
+
+        this.setState({
+            visible: visibleState
+        });
+    }
+
+    setMyPracticesActive = () => {
+        const visibleState = this.state.visible;
+        for(let key in visibleState){
+            visibleState[key] = false;
+        }
+
+        visibleState['myPractices'] = true;
+
+        this.setState({
+            visible: visibleState
+        });
+    }
+
+    setHowYouHelpActive = () => {
+        const visibleState = this.state.visible;
+        for(let key in visibleState){
+            visibleState[key] = false;
+        }
+
+        visibleState['howYouHelp'] = true;
+
+        this.setState({
+            visible: visibleState
+        });
+    }
+
     render() {
         return (
             <div className={`about-me`}>
@@ -13,13 +76,15 @@ export default class AboutMe extends Component<IProps> {
                     <div className={`col-1`}>
                         <h2 className={`heading`}>Important things to know about me.</h2>
                         <ol>
-                            <li className={`active`}>What sets me apart?</li>
-                            <li className={``}>My current on job practices.</li>
-                            <li className={``}>How you will be a help to me!</li>
+                            <li onClick={this.setHowImDifferentActive} className={`${this.state.visible.whyImDifferent && 'active'}`}>What sets me apart?</li>
+                            <li onClick={this.setMyPracticesActive} className={`${this.state.visible.myPractices && 'active'}`}>My current on job practices.</li>
+                            <li onClick={this.setHowYouHelpActive} className={`${this.state.visible.howYouHelp && 'active'}`}>How you will be a help to me!</li>
                         </ol>
                     </div>
                     <div className={`col-2`}>
-                        <MyCurrentOnJobPractices />
+                        { this.state.visible.whyImDifferent && <WhatSetsMeApart/> }
+                        { this.state.visible.myPractices && <MyCurrentOnJobPractices/> }
+                        { this.state.visible.howYouHelp && <HowYouWillHelpMe/> }
                     </div>
                 </div>
             </div>
@@ -31,8 +96,10 @@ export default class AboutMe extends Component<IProps> {
 function WhatSetsMeApart() {
     return (
         <React.Fragment>
-            <h3 className={`heading-secondary`}>What sets me apart from other junior developers?</h3>
-            <p>I strive to solve solutions by attacking the prolem at its core. I always enjoy a nice coding challenge because I always find out something new. And I also love the ability to breeze through problems which I've already found prior solutions to.</p>
+            <div className={`what-sets-me-apart about-me-item`}>
+                <h3 className={`heading-secondary`}>What sets me apart from other junior developers?</h3>
+                <p>I strive to solve solutions by attacking the prolem at its core. I always enjoy a nice coding challenge because I always find out something new. And I also love the ability to breeze through problems which I've already found prior solutions to.</p>
+            </div>
         </React.Fragment>
     );
 }
@@ -40,7 +107,7 @@ function WhatSetsMeApart() {
 function MyCurrentOnJobPractices() {
     return (
         <React.Fragment>
-            <div className={`my-practices`}>
+            <div className={`my-practices about-me-item`}>
                 <div className={`my-practices__item`}>
                     <h3 className={`heading-secondary`}>Typescript</h3>
                     <p>Having started off in C#, statically typed Typescript gives me the security I need to write self documented. It also provides the ability to write <span className={`highlight`}>extensible</span> and <span className={`highlight`}>modular</span> code bases.</p>
@@ -65,8 +132,10 @@ function MyCurrentOnJobPractices() {
 function HowYouWillHelpMe() {
     return (
         <React.Fragment>
-            <h3 className={`heading-secondary`}>Priceless Mentorship</h3>
-            <p>Coding alone is hard and progress is slow. working with a team is a two way relationship wherer I can provide <span className={`highlight`}>value</span> to you , while you <span className={`highlight`}>invest</span> in me!</p>
+            <div className={`how-you-will-help about-me-item`}>
+                <h3 className={`heading-secondary`}>Priceless Mentorship</h3>
+                <p>Coding alone is hard and progress is slow. working with a team is a two way relationship wherer I can provide <span className={`highlight`}>value</span> to you , while you <span className={`highlight`}>invest</span> in me!</p>
+            </div>
         </React.Fragment>
     );
 }

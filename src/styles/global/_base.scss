@@ -8,4 +8,8 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
+
+    @include breakpoint(sm){
+        font-size: 59%;
+    }
 }

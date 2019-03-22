@@ -8,13 +8,27 @@ $container-spacing-mobile: calc(2 * #{$grid-container-spacing-mobile});
     width: calc(100% - #{$container-spacing});
     max-width: 120rem;
     margin: 0 auto;
+
+    @include breakpoint(sm){
+        width: calc(100% - #{$container-spacing-mobile});
+    }
 }
 
 .page-grid{
     display: grid;
     grid-template-columns: [flush-start] minmax(#{$grid-container-spacing}, 1fr) [container-start] repeat( 12, [col-start] minmax(min-content, 10rem) [col-end] ) [container-end] minmax(#{$grid-container-spacing}, 1fr) [flush-end];
-    grid-template-rows: 65vh 7rem;
+    grid-template-rows: 65vh;
+
+    @include breakpoint(sm-h){
+        grid-template-rows: 100vh;    
+    }
+
+    @include breakpoint(sm){
+        grid-template-columns: [flush-start] minmax(#{$grid-container-spacing-mobile}, 1fr) [container-start] repeat( 12, [col-start] minmax(min-content, 12.5rem) [col-end] ) [container-end] minmax(#{$grid-container-spacing-mobile}, 1fr) [flush-end];
+    }
 }
+
+
 
 // .header {
 //     grid-area: header;

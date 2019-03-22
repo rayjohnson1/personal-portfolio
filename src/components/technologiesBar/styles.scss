@@ -14,20 +14,25 @@
 .technologies-bar {
     grid-column: flush-start / flush-end;
     height: 100%;
-    overflow: hidden;
     box-shadow: 0 1rem 3rem rgba(black, .1);
     position: relative;
-
-    &__inner-wrapper{
-        height: 100%;
+    padding: 3rem;
+    overflow-x: scroll;
+    
+    
+    
+    .container{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        height: 100%;
         white-space: nowrap;
-        animation: Slide 20s ease forwards infinite;
+
     }
+    
 
     &__image{
+        display: block;
         height: 3.5rem;
         width: auto;
 
@@ -36,3 +41,4 @@
         }
     }
 }
+

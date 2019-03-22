@@ -1,0 +1,19 @@
+@mixin breakpoint($bp) {
+
+    @if $bp == lg {
+        @media only screen and (max-width: 1000px) { @content; }
+    }
+    
+    @if $bp == md {
+        @media only screen and (max-width: 750px) { @content; }
+    }
+
+    @else if $bp == sm {
+        @media only screen and (max-width: 600px) { @content; }
+    }
+
+    @else if $bp == sm-h {
+        @media only screen and (max-height: 750px) { @content; }
+    }
+
+}

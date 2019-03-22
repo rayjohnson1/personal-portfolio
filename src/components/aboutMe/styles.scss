@@ -1,40 +1,65 @@
 @import '../../styles/global/variables';
+@import '../../styles/global/mixins';
 
 .about-me{
     grid-column: flush-start / flush-end;
     background: #F9FCFF;
     padding: 10rem 0;
+    border-bottom: 1px solid rgb(185, 185, 252);
 
     .container{
         display: grid;
         grid-template-columns: minmax(min-content, 30rem) 1fr;
         grid-gap: 3rem;
+
+        @include breakpoint(md){
+            grid-template-columns: 1fr;
+        }
+
+        .col-1 {
+            position: relative;
+            padding: 8rem 0;
+
+            @include breakpoint(md){
+                padding: 2rem 0;
+            }
+
+            
+        
+            &::after{
+                content: '';
+                position: absolute;
+                width: 5px;
+                background: rgb(233, 233, 233);
+                right: 0;
+                top: 0;
+                height: 100%;
+                box-shadow: .6rem 0 1rem rgba(black, .15);
+
+                @include breakpoint(md){
+                    display: none;
+                }
+            }
+
+            
+        }
+        
+        .col-2{
+            padding: 8rem 0;
+            @include breakpoint(md){
+                padding: 2rem 0;
+            }
+        }
     }
 }
 
-.col-1 {
-    //border-right: 3px solid rgb(216, 216, 216);
-    position: relative;
-    padding: 8rem 0;
 
-    &::after{
-        content: '';
-        position: absolute;
-        width: 5px;
-        background: rgb(233, 233, 233);
-        right: 0;
-        top: 0;
-        height: 100%;
-        box-shadow: .6rem 0 1rem rgba(black, .15);
-    }
-}
-
-.col-2{
-    padding: 8rem 0;
-}
 
 ol{
     padding-left: 2rem;
+    @include breakpoint(md){
+    }
+
     li{
         padding: .5rem;
         position: relative;
@@ -57,10 +82,18 @@ ol{
             height: 100%;
             width: 5px;
             background: none;
+
+            @include breakpoint(md){
+                display: none;
+            }
         }
 
         &:not(:last-child){
             margin-bottom: 2rem;
+
+            @include breakpoint(md){
+                margin-bottom: 0;
+            }
         }
 
         &:not(.active){
@@ -81,4 +114,51 @@ ol{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
     grid-row-gap: 5rem;
+
+    @media only screen and (max-width: 850px){
+        grid-template-columns: 1fr;
+    }
+
+    // @media only screen and (min-width: 749px){
+    //     grid-template-columns: 1fr 1fr;
+    // }
+
+    @include breakpoint(md){
+        //grid-template-columns: 1fr;
+    }
+    
 }
+
+@keyframes animateIn {
+    0% {
+        transform: translateY(-5rem);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+@keyframes animateOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        transform: translateY(-5rem);
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.about-me-item{
+    
+    animation: animateIn .5s ease-in-out forwards;
+
+}
+

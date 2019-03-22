@@ -12,8 +12,8 @@ import github_logo from '../../assets/svgs/github-2.svg';
 export default class TechnologiesBar extends React.Component {
     render() {
         return (
-            <div className={`technologies-bar`}>
-                <div className={`technologies-bar__inner-wrapper`}>
+            <div id={`technologies`} className={`technologies-bar`}>
+                <div className={`container`}>
                     <img className={`technologies-bar__image`} src={github_logo} alt={`github`} />
                     <img className={`technologies-bar__image`} src={git_logo} alt={`git`} />
                     <img className={`technologies-bar__image`} src={chai_logo} alt={`git`} />
