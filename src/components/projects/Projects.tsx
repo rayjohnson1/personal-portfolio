@@ -19,7 +19,7 @@ export default class Projects extends Component {
                                     <img src={personal_site} alt={`Project Thumbnail`} />
                                 </div>
                                 <div className={`project__display__actions`}>
-                                    <a href={`#`} className={`link link--inactive`}><i className="fas fa-desktop"></i><span>Hope you are enjoying :)</span></a>
+                                    <a href={`#`} className={`link link--inactive`}><i className="fas fa-desktop"></i><span>Live Preview</span></a>
                                     <a href={`https://github.com/rayjohnson1/personal-portfolio`} className={`link`}><i className="fas fa-code-branch"></i><span>View Source</span></a>
                                 </div>
                             </div>
