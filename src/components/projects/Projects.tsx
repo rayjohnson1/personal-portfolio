@@ -78,15 +78,15 @@ export default class Projects extends Component {
                         <div className={`col-2`}>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>My Role</p>
-                                <p>In this project I oversaw the entire SDLC. I met regularly with the client discussing project requirements, vision and end goals, while working in a SCRUM like manner.</p>
+                                <p>In this project I oversaw the entire <span className={`highlight`}>SDLC</span>. I met regularly with the client discussing project <span className={`highlight`}>requirements</span>, vision and end goals, while working in a <span className={`highlight`}>scrum</span> like manner.</p>
                             </div>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>Project Difficulties</p>
-                                <p>This project really tested my skills in architecting out a workable solution. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.</p>
+                                <p>This project really tested my skills in <span className={`highlight`}>architecting out a workable solution</span>. In the beginning of development, the first thing I did was starting up an express server. With no plan of action, I wasted two weeks worth of work before I was forced to start over.</p>
                             </div>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>My Solution</p>
-                                <p>To solve this struggle, I decided to kick it old school with some good ol' <span className={`highlight`}>Object Oriented Design and Analysis</span>. Following a planning structure, I was able to improve my on job efficeny and reach my set sprints.</p>
+                                <p>To solve this struggle, I decided to kick it old school with some good ol' <span className={`highlight`}>Object Oriented Design and Analysis</span>. Following a planning structure, I was able to improve my on job <span className={`highlight`}>efficeny</span> and <span className={`highlight`}>reach my set sprints</span>.</p>
                             </div>
                         </div>
                     </div>
