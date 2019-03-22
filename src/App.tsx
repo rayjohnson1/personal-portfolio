@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './styles/index.scss';
+import Page from './components/page/Page';
 
-class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        
-      </div>
+      <Page />
     );
   }
 }
-
-export default App;

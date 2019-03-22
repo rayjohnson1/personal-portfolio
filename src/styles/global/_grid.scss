@@ -1,0 +1,41 @@
+$grid-container-spacing: 4rem;
+$container-spacing: calc(2 * #{$grid-container-spacing});
+
+$grid-container-spacing-mobile: 1.5rem;
+$container-spacing-mobile: calc(2 * #{$grid-container-spacing-mobile});
+
+.container {
+    width: calc(100% - #{$container-spacing});
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.page-grid{
+    display: grid;
+    grid-template-columns: [flush-start] minmax(#{$grid-container-spacing}, 1fr) [container-start] repeat( 12, [col-start] minmax(min-content, 10rem) [col-end] ) [container-end] minmax(#{$grid-container-spacing}, 1fr) [flush-end];
+    grid-template-rows: 65vh 7rem;
+}
+
+// .header {
+//     grid-area: header;
+// }
+
+// .technologies-bar {
+//     grid-area: techbar;
+// }
+
+// .about-me {
+//     grid-area: aboutme;
+// }
+
+// .projects {
+//     grid-area: projects;
+// }
+
+// .blogs {
+//     grid-area: blogs;
+// }
+
+// footer {
+//     grid-area: footer;
+// }

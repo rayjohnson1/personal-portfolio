@@ -1,0 +1,84 @@
+@import '../../styles/global/variables';
+
+.about-me{
+    grid-column: flush-start / flush-end;
+    background: #F9FCFF;
+    padding: 10rem 0;
+
+    .container{
+        display: grid;
+        grid-template-columns: minmax(min-content, 30rem) 1fr;
+        grid-gap: 3rem;
+    }
+}
+
+.col-1 {
+    //border-right: 3px solid rgb(216, 216, 216);
+    position: relative;
+    padding: 8rem 0;
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 5px;
+        background: rgb(233, 233, 233);
+        right: 0;
+        top: 0;
+        height: 100%;
+        box-shadow: .6rem 0 1rem rgba(black, .15);
+    }
+}
+
+.col-2{
+    padding: 8rem 0;
+}
+
+ol{
+    padding-left: 2rem;
+    li{
+        padding: .5rem;
+        position: relative;
+        cursor: default;
+
+        &.active{
+            color: $color-primary;
+            cursor: initial;
+            &::after{
+                background: $color-primary;
+            }
+        }
+
+        &::after{
+            content: '';
+            z-index: 2;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: none;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+        &:not(.active){
+            &:hover{
+                color: rgba($color-primary, .5);
+                &::after{
+                    background: rgba($color-primary, .5);
+                }
+            }
+        }
+    }
+}
+
+
+
+.my-practices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 5rem;
+}

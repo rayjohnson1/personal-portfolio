@@ -1,0 +1,25 @@
+body{
+    font-size: 1.6rem;
+    color: #646F79;
+}
+
+.heading{
+    color: #353A47;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.heading-secondary{
+    color: #2A4660;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    line-height: 2.4rem;
+}
+
+span.highlight{
+    color: $color-primary;
+    font-weight: 500;
+}

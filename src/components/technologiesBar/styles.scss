@@ -1,0 +1,38 @@
+@import '../../styles/global/variables';
+
+
+@keyframes Slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.technologies-bar {
+    grid-column: flush-start / flush-end;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 1rem 3rem rgba(black, .1);
+    position: relative;
+
+    &__inner-wrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        animation: Slide 20s ease forwards infinite;
+    }
+
+    &__image{
+        height: 3.5rem;
+        width: auto;
+
+        &:not(:last-child){
+            margin-right: 8rem;
+        }
+    }
+}
