@@ -7,7 +7,7 @@ import personal_site from '../../assets/images/personal_site_poster.jpg';
 export default class Projects extends Component {
     render() {
         return (
-            <section className={`projects`}>
+            <section id={`projects`} className={`projects`}>
                 <h1 className={`heading`}>Projects</h1>
                 <div className={`projects__grid`}>
 

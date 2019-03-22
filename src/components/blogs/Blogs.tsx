@@ -4,7 +4,7 @@ import './styles.scss';
 export default class Blogs extends Component {
     render() {
         return (
-            <section className={`blogs`}>
+            <section id={`blogs`} className={`blogs`}>
                 <div className={`container`}>
                     <h1 className={`heading`}>Blogs</h1>
                     <p className={`blog__copy`}>When I have time I enjoy to write blogs over on Medium. Topics are software related and providing a means for readers to find solutions to problems that they may run into.</p>

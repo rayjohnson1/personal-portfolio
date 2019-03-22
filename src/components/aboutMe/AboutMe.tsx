@@ -71,7 +71,7 @@ export default class AboutMe extends Component<IProps, IState> {
 
     render() {
         return (
-            <div className={`about-me`}>
+            <div id={`about-me`} className={`about-me`}>
                 <div className={`container`}>
                     <div className={`col-1`}>
                         <h2 className={`heading`}>Important things to know about me.</h2>
