@@ -38,7 +38,7 @@ export default class Projects extends Component {
                         <div className={`col-2`}>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>Overview</p>
-                                <p>Simple <span className={`highlight`}>React</span> project to display my portfolio of work. It was build by me using <span className={`highlight`}>React / Typescript</span></p>
+                                <p>Simple <span className={`highlight`}>React</span> project to display my portfolio of work. It was built by me using <span className={`highlight`}>React / Typescript</span></p>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export default class Projects extends Component {
                             </div>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>My Solution</p>
-                                <p>To solve this struggle, I decided to kick it old school with some good ol' <span className={`highlight`}>Object Oriented Design and Analysis</span>. Following a planning structure, I was able to improve my on job <span className={`highlight`}>efficeny</span> and <span className={`highlight`}>reach my set sprints</span>.</p>
+                                <p>To solve this struggle, I decided to kick it old school with some good ol' <span className={`highlight`}>Object Oriented Design and Analysis</span>. Following a planning structure, I was able to improve my work <span className={`highlight`}>efficency</span> and <span className={`highlight`}>reach my set sprints</span>.</p>
                             </div>
                         </div>
                     </div>

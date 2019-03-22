@@ -98,7 +98,7 @@ function WhatSetsMeApart() {
         <React.Fragment>
             <div className={`what-sets-me-apart about-me-item`}>
                 <h3 className={`heading-secondary`}>What sets me apart from other junior developers?</h3>
-                <p>I strive to solve solutions by attacking the prolem at its core. I always enjoy a nice coding challenge because I always find out something new. And I also love the ability to breeze through problems which I've already found prior solutions to.</p>
+                <p>I strive to solve solutions by <span className={`highlight`}>attacking the prolem at its core</span>. I enjoy a nice coding challenge because I am always learning new things. And I also love the ability to breeze through problems which I've already found prior solutions to.</p>
             </div>
         </React.Fragment>
     );
@@ -110,11 +110,11 @@ function MyCurrentOnJobPractices() {
             <div className={`my-practices about-me-item`}>
                 <div className={`my-practices__item`}>
                     <h3 className={`heading-secondary`}>Typescript</h3>
-                    <p>Having started off in C#, statically typed Typescript gives me the security I need to write self documented. It also provides the ability to write <span className={`highlight`}>extensible</span> and <span className={`highlight`}>modular</span> code bases.</p>
+                    <p>Having started off in C#, <span className={`highlight`}>statically typed Typescript</span> gives me the security I need to write self easy to read <span className={`highlight`}>self documented code</span>. It also provides the ability to write <span className={`highlight`}>extensible</span> and <span className={`highlight`}>modular</span> code bases.</p>
                 </div>
                 <div className={`my-practices__item`}>
                     <h3 className={`heading-secondary`}>SOLID</h3>
-                    <p>I believe that at one point software maintenance came at a large price to the company. Today I believe that that price have been heavily discounted when following these simple principles.</p>
+                    <p>I believe that at one point software maintenance came at a large price to the company. Today I believe that that price have been <span className={`highlight`}>heavily discounted</span> when following these simple principles.</p>
                 </div>
                 <div className={`my-practices__item`}>
                     <h3 className={`heading-secondary`}>TDD</h3>
