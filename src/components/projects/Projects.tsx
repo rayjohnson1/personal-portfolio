@@ -47,7 +47,7 @@ export default class Projects extends Component {
 
                     <div className={`project`}>
                         <div className={`col-1`}>
-                            <h3 className={`heading-secondary`}>GEKOFX Photography</h3>
+                            <h3 className={`heading-secondary`}>Photography Template</h3>
                             <div className={`project__display`}>
                                 <div className={`project__display__poster`}>
                                     <img src={gekofx} alt={`Project Thumbnail`} />
