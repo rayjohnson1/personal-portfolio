@@ -53,7 +53,7 @@ export default class Projects extends Component {
                                     <img src={gekofx} alt={`Project Thumbnail`} />
                                 </div>
                                 <div className={`project__display__actions`}>
-                                    <a href={`https://serene-earth-94353.herokuapp.com/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Preview</span></a>
+                                    <a href={`https://immense-caverns-26410.herokuapp.com/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Preview</span></a>
                                     <a href={`#`} className={`link link--inactive`}><i className="fas fa-code-branch"></i><span>Source Private</span></a>
                                 </div>
                             </div>
