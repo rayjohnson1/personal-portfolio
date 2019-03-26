@@ -64,6 +64,7 @@ export default class Projects extends Component {
                                     <li><i className="fas fa-dot-circle"></i><p>NodeJS</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>Typescript</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>ExpressJS</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>JSON Web Tokens</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>Jest</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>PostgreSQL</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>SinonJS</p></li>
