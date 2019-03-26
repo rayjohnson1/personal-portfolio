@@ -24,15 +24,15 @@ export default class ContactButtons extends React.Component<{}, {modalOpen: bool
 
         return (
             <React.Fragment>
-                <a href={`https://www.linkedin.com/in/rayjohnson141/`} className={`action`}>
+                <a href={`https://www.linkedin.com/in/rayjohnson141/`} className={`action`} target={`_blank`}>
                     <i className="fab fa-linkedin-in"></i>
                     <span>LinkedIn</span>
                 </a>
-                <a href={`https://github.com/rayjohnson1`} className={`action`}>
+                <a href={`https://github.com/rayjohnson1`} className={`action`} target={`_blank`}>
                     <i className="fab fa-github"></i>
                     <span>Github</span>
                 </a>
-                <a href={`https://medium.com/@raymondjohnson121`} className={`action`}>
+                <a href={`https://medium.com/@raymondjohnson121`} className={`action`} target={`_blank`}>
                     <i className="fab fa-medium-m"></i>
                     <span>Blog</span>
                 </a>
@@ -40,10 +40,10 @@ export default class ContactButtons extends React.Component<{}, {modalOpen: bool
                     <i className="fas fa-at"></i>
                     <span>Email</span>
                 </a>
-                {/* <a href={`#`} className={`action`}>
+                <a href={`https://s3.amazonaws.com/raymond-jay-portfolio/johnson_raymond_resume.pdf`} className={`action`} target={`_blank`}>
                     <i className="fas fa-newspaper"></i>
                     <span>Resume</span>
-                </a> */}
+                </a>
                 { this.state.modalOpen && 
                     <ModalPortal>
                         <ModalHandler close={this.toggleModal}>
