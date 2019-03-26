@@ -20,10 +20,10 @@ export default class Header extends React.Component {
                     </nav>
                     <div className={`container`}>
                         <div className={`header__name-tag`}>
-                            <h1>Welcome to My World</h1>
+                            <h1>Javascript Software Engineer</h1>
                             <p>
-                                Freelance fullstack software engineer<br/>
-                                Greater Detroit Area
+                                {/* Freelance fullstack javascript engineer<br/> */}
+                                <i className="fas fa-map-marker-alt" style={{marginRight: '15px'}}></i>Greater Detroit Area
                             </p>
                         </div>
                         <div className={`header__actions`}>
