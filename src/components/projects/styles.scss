@@ -71,6 +71,10 @@
             list-style: none;
             grid-template-columns: repeat(2, 1fr);
             grid-row-gap: 1.5rem;
+
+            &--no-grid{
+                grid-template-columns: 1fr;
+            }
             
             li{
                 display: flex;

@@ -64,7 +64,6 @@ export default class Projects extends Component {
                                     <li><i className="fas fa-dot-circle"></i><p>NodeJS</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>Typescript</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>ExpressJS</p></li>
-                                    <li><i className="fas fa-dot-circle"></i><p>JSON Web Tokens</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>Jest</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>PostgreSQL</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>SinonJS</p></li>
@@ -88,6 +87,18 @@ export default class Projects extends Component {
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>My Solution</p>
                                 <p>To solve this struggle, I decided to kick it old school with some good ol' <span className={`highlight`}>Object Oriented Design and Analysis</span>. Following a planning structure, I was able to improve my work <span className={`highlight`}>efficency</span> and <span className={`highlight`}>reach my set sprints</span>.</p>
+                            </div>
+                            <div className={`project__detail-section`}>
+                                <p className={`small-section-title`}>Notable Features</p>
+                                <ul className={'project__technologies__list project__technologies__list--no-grid'}>
+                                    <li><i className="fas fa-dot-circle"></i><p>Registration</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Login</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Account Confirmation</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p><span className={'highlight'}>Token Authentication</span> with JSON Web Tokens</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p><span className={'highlight'}>Automatic image resizing</span> on images over 1600px wide</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Select multiple items to perform <span className={'highlight'}>batch operations</span></p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Type photo collection name to confirm delete</p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -127,6 +138,15 @@ export default class Projects extends Component {
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>My Solution</p>
                                 <p>After hacking around for a bit, I decided on a method of using the appropriate <span className={`highlight`}>Lifecycle hook</span> because this solved my issue as well as gave the best performance.</p>
+                            </div>
+                            <div className={`project__detail-section`}>
+                                <p className={`small-section-title`}>Notable Features</p>
+                                <ul className={'project__technologies__list project__technologies__list--no-grid'}>
+                                    <li><i className="fas fa-dot-circle"></i><p><span className={'highlight'}>Efficiently calculates</span> neighboring mines to display tile numbers</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Right click to flag a mine</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Reveals all mines when game is lost. Specify the mine that cost the game.</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p><span className={'highlight'}>Recursively reveal</span> all tiles with <span className={'highlight'}>zero</span> neighboring mines when player clicks on a tile with <span className={'highlight'}>zero</span> neighboring mines</p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
