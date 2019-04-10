@@ -38,7 +38,7 @@ export default class Page extends React.Component {
                 </nav> */}
                 <div className={`page-grid`}>
                     <Header />
-                    <TechnologiesBar />
+                    {/* <TechnologiesBar /> */}
                     <AboutMe />
                     <Projects />
                     <Blogs />

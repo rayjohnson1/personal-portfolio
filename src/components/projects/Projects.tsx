@@ -54,7 +54,8 @@ export default class Projects extends Component {
                                 </div>
                                 <div className={`project__display__actions`}>
                                     <a href={`https://immense-caverns-26410.herokuapp.com/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Preview</span></a>
-                                    <a href={`#`} className={`link link--inactive`}><i className="fas fa-code-branch"></i><span>Source Private</span></a>
+                                    {/* <a href={`#`} className={`link link--inactive`}><i className="fas fa-code-branch"></i><span>Source Private</span></a> */}
+                                    <a href={`https://github.com/rayjohnson1/gekofx`} className={`link`}><i className="fas fa-code-branch"></i><span>View Source</span></a>
                                 </div>
                                 <p className={'aside'}>This app is hosted on a <span className={'highlight'}>Heroku Free Dyno Plan</span>, meaning that on the initial load, the server may need to start which can cause a <span className={'highlight'}>small delay of 15 - 20 seconds</span> or so. Thank you.</p>
                             </div>
